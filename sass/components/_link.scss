@@ -1,0 +1,23 @@
+.link {
+    text-decoration: none;
+    list-style: none;
+
+    &__address {
+    color: var(--auth-color);
+
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &__icon {
+    align-items: baseline;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+}
+
