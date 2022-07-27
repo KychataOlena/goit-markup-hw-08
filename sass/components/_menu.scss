@@ -1,9 +1,11 @@
 $logoWebcolor: black;
 
 .logo {
+    display: inline-flex;
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
+    // padding-top: 24px;
+    // padding-bottom: 24px;
 
     
     &__web {
@@ -21,21 +23,47 @@ $logoWebcolor: black;
     line-height: 1.2;
 
     }
+      @media screen and (min-width: 480px) {
+       padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 88px;
+    }
 }
 
 
 .menu {
-    display: flex;
+    // display: flex;
     align-items: center;
+    width: 100%;
+    @media screen and (min-width: 768px){
+        display: flex;
+     }
+        
 
     &__list {
     display: flex;
-    margin-left: 98px;
+
+
+    &--end{
+    margin-left: auto;
+    }
 }
 
   &__item:not(:last-child) {
     margin-right: 50px;
+ 
     }
+  &__item--end:not(:last-child) {
+     margin-right: 30px;
+   }
 
 
     &__link {
@@ -69,12 +97,9 @@ $logoWebcolor: black;
     background-color: var(--accent-color);
     border-radius: 2px;
 }
-    &__item:not(:last-child) {
-    margin-right: 48px;
-}
+   
+
+
 }
 
-.auth-nav {
-    margin-left: auto;
-}
 

@@ -1,13 +1,33 @@
 .large-title {
-    max-width: 670px;
-    margin: 0 auto 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  
+        max-width: 360px;
+        margin: 0 auto 30px;
+        font-size: 26px;
+        line-height: 1.61;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--text-white-color);
 
-    color: var(--text-white-color);
+    @media screen and (min-width: 768px) {
+       max-width: 360px;
+       margin: 0 auto 30px;
+       font-size: 26px;
+       line-height: 1.61;
+       text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--text-white-color);
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        max-width: 670px;
+        margin: 0 auto 30px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
 }
 
 .subtitle {
@@ -23,7 +43,14 @@
 
 .medium__title {
 
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     color: var(--title-text-color);
+    
+    @media screen and (min-width: 768px) {
+       font-size: 28px;
+    }
+      @media screen and (min-width: 1200px) {
+       font-size: 36px;
+    }
 }
