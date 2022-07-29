@@ -47,8 +47,7 @@ $logoWebcolor: black;
         display: flex;
      }
         
-
-    &__list {
+   &__list {
     display: flex;
 
 
@@ -67,10 +66,10 @@ $logoWebcolor: black;
 
 
     &__link {
-    display: inline-flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // display: inline-flex;
+    // align-items: center;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     color: var(--primery-nav-color);
     font-weight: 500;
@@ -78,6 +77,20 @@ $logoWebcolor: black;
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px){
+        display: inline-flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+     }
+      @media screen and (min-width: 1200px){
+        display: inline-flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+     }
+
+
 }
 
 
