@@ -1,9 +1,25 @@
 .link {
     text-decoration: none;
     list-style: none;
+    letter-spacing: 0.02em;
+    color: var(--primery-nav-color);
 
     &__address {
     color: var(--auth-color);
+
+     @media screen and (min-width: 768px){
+        font-size: 12px;
+        line-height: 1.16;
+        color: var(--auth-color);
+        
+     }
+ 
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--auth-color);
+     }
+
     }
     
 
