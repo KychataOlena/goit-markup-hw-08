@@ -84,9 +84,9 @@ $logoWebcolor: black;
         &--end{
           @media screen and (min-width: 1200px){
             margin-left: auto;
-     }
         }
-}
+        }
+        }
 
         .menu__item--tablet:not(:last-child){
        @media screen and (min-width: 768px){
@@ -106,8 +106,6 @@ $logoWebcolor: black;
      }
    }
   
-
-
 
     &__link {
   
@@ -165,4 +163,8 @@ $logoWebcolor: black;
             display: flex;
             flex-wrap: wrap;
         }
+    }
+
+    .menu-container{
+        z-index: 10;
     }

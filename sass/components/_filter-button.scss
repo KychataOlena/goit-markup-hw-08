@@ -1,10 +1,40 @@
 .filter-menu {
     display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 46px;
+    margin: -7.5px -4px;
+     @media screen and (min-width: 768px){
+        padding-bottom: 36px;
+     }
+      @media screen and (min-width: 1200px){
+        padding-bottom: 50px;
+
+     }
 
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
-    }
+ &__item:not(:last-child){
+     @media screen and (min-width: 768px){
+          margin-right: 8px;
+     }
+      @media screen and (min-width: 1200px){
+          margin-right: 8px;
+     }
+ }
+   
+
+     @media screen and (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      @media screen and (min-width: 1200px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 }
+
+.filter-menu__item{
+    margin: 7.5px 4px;
+}
+

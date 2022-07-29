@@ -15,40 +15,78 @@
 <body  class="body">
     <!-- Header -->
 <header class=" header">
-   <div class="container">
-      <nav class="menu">
-         <a href="./index.html" class="logo">
-            <span class="logo__web">Web</span>
-            <span class="logo__studio">Studio</span>
+<div class="container">
+   <div class="header__inner">
+        <a href="./index.html" class="logo">
+           <span class="logo__web">Web</span> 
+           <span class="logo__studio">Studio</span>
          </a>
-
+       <nav class="menu">
          <ul class="menu__list">
-            <li class="menu__item"><a href="./index.html" class="menu__link link ">Студия</a></li>
-            <li class="menu__item"><a href="./portfolio.html" class="menu__link link menu__link--current">Портфолио</a></li>
-            <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
+            <li class="menu__item--tablet menu__item"><a href="./index.html" class="menu__link link ">Студия</a></li>
+            <li class="menu__item--tablet menu__item"><a href="./portfolio.html" class="menu__link link menu__link--current">Портфолио</a></li>
+            <li class="menu__item--tablet menu__item"><a href="" class="menu__link link">Контакты</a></li>
          </ul>
-         <ul class="menu__list auth-nav">
-            <li class="menu__item">
-               <a href="mailto:info@devstudio.com" class="menu__link link link__address">
-                  <svg class="link__icon">
-                     <use href="./img/sprite.svg#icon-mail">
-                     </use>
-                  </svg>
-                  info@devstudio.com
-               </a>
-            </li>
-            <li class="menu__item">
-               <a href="telto:+38096111111" class="menu__link link link__address">
-                  <svg class="link__icon">
-                     <use href="./img/sprite.svg#icon-phone">
-                     </use>
-                  </svg>
-                  +38 096 111 11 11</a>
+         <ul class=" menu__list--end menu__tablet">
+            <li class="menu__item menu__item--end"> 
+            <a href="mailto:info@devstudio.com" class="menu__link menu__link--tablet  link link__address">
+               <svg class="link__icon">
+                  <use href="./img/sprite.svg#icon-mail">
+                  </use>
+               </svg>
+               info@devstudio.com
+            </a>
+         </li>
+            <li class="menu__item menu__item--end">
+            <a href="telto:+38096111111" class="menu__link--tablet menu__link link link__address">
+               <svg class="link__icon">
+                  <use href="./img/sprite.svg#icon-phone">
+                  </use>
+               </svg>
+               +38 096 111 11 11</a>
             </li>
          </ul>
       </nav>
-   </div>
+      <button type="button" class="menu-button" 
+         aria-expanded="false"
+         aria-controls="menu-container"
+         data-menu-button >
+         <svg width="40px" height="40px"
+          aria-label="переключатель мобильного меню">
+            <use class="icon-close-menu" href="./img/sprite.svg#icon-close_menu" ></use>
+            <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+         </svg>
+      </button>
+      <div class="menu-container" data-menu id="menu-container">
+         
+       <nav class="menu-container__list">
+          <ul class="menu-container__item">
+            <li class="menu-container__link"><a href="./index.html" class=" link">Студия</a></li>
+            <li class="menu-container__link"><a href="./portfolio.html" class="menu-container--current menu__link link">Портфолио</a></li>
+            <li class="menu-container__link"><a href="" class="menu__link link">Контакты</a></li>
+         </ul>
+          <ul class="menu-container__address">
+            <li class="menu-container__link"> 
+            <a href="mailto:info@devstudio.com" class="link__address link menu-container--mail">
+               info@devstudio.com
+            </a>
+         </li>
+            <li class="menu-container__link">
+            <a href="telto:+38096111111" class="link__address link  menu-container--phone">
+               +38 096 111 11 11</a>
+            </li>
+         </ul>
+         <ul class="menu-sotial">
+            <li class="menu-sotial__item"><p class="menu-sotial__text">Instagram</p></li>
+            <li class="menu-sotial__item"><p class="menu-sotial__text">Twitter</p></li>
+            <li class="menu-sotial__item"><p class="menu-sotial__text">Facebook</p></li>
+            <li class="menu-sotial__item"><p>LinkedIn</p> </li>
+         </ul>
+       </nav> 
 
+      </div>
+   </div>
+</div>
 
 </header>
 
@@ -271,22 +309,22 @@
 
 <!-- Footer -->
 
-<footer class="footer">
+   <footer class="footer">
    <div class="container footer__section">
       <section class="footer__address">
          <a href="./index.html" class="logo-footer">
-            <span class="logo__web">Web</span>
+            <span class="logo__web">Web</span> 
             <span class="logo__label">Studio</span>
-         </a>
-         <address class="adress ">
+          </a>
+          <address class="adress">
             <p class="adress__text">г. Киев, пр-т Леси Украинки, 26 </p>
             <a href="mailto:info@example.com" class="adress__link link">info@example.com</a>
             <a href="telto:+380991111111" class="adress__link link">+38 099 111 11 11</a>
          </address>
 
       </section>
-
-      <div>
+     
+      <div class="footer-sotial-list">
          <span class="subtitle subtitle--footer">присоединяйтесь</span>
          <ul class="sotial sotial-list">
                   <li class="sotial__item">
@@ -323,26 +361,29 @@
                </ul>
 
       </div>
+
       <div class="form-subscription">
-         <form name="footer-form" autocomplete="on" novalidate>
+         <form  name="footer-form" autocomplete="on" novalidate>
             <label class="form-subscription__sign subtitle" for="footer-form-sign">Подпишитесь на рассылку</label>
-            <input class="footer-form__input" type="text" id="footer-form-sign" name="footer-form-sign" placeholder="E-mail">
-            <button class="form-button form-button--send" type="submit">Отправить
-               <svg class="form-button__icon">
-                  <use href="./img/sprite.svg#icon-send"></use>
-               </svg>
-            </button>
-      
+            <input class="footer-form__input" type="text"
+             id="footer-form-sign" 
+             name="footer-form-sign"
+             placeholder="E-mail">
+         <button class="form-button form-button--send" type="submit">Отправить
+            <svg class="form-button__icon">
+               <use href="./img/sprite.svg#icon-send"></use>
+            </svg>
+         </button>
+        
          </form>
       </div>
 
       
+      
 
-
-
-
-
+     
    </div>
-</footer>
+   </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

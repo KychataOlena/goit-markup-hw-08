@@ -6,7 +6,8 @@
     
 
     &__address {
-        
+     text-align: center;
+
      @media screen and (min-width: 1200px){
       margin-right: 70px;
 
@@ -16,9 +17,9 @@
 }
 .footer__section {
      @media screen and (min-width: 480px){
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
 
       }
        @media screen and (min-width: 768px){
@@ -38,32 +39,32 @@
     }
 
 
-.logo-footer {
-    display: block;
-    text-decoration: none;
-    margin-right: 0px;
+    .logo-footer {
+        display: block;
+        text-decoration: none;
+        margin-right: 0px;
 
  
-}
-.logo__label {
-    color: var(--text-white-color);
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
-}
+    }
+    .logo__label {
+        color: var(--text-white-color);
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        line-height: 1.2;
+    }
 
-.adress {
-    margin-top: 20px;
-    font-style: normal;
-    text-decoration: none;
+    .adress {
+        margin-top: 20px;
+        font-style: normal;
+        text-decoration: none;
 
-    &__text {
+        &__text {
 
-    margin-bottom: 9px;
-    font-weight: 400;
-    line-height: 1.71;
-    color: var(--text-white-color);
-}
+        margin-bottom: 9px;
+        font-weight: 400;
+        line-height: 1.71;
+        color: var(--text-white-color);
+    }
 
     &__link {
     display: block;
@@ -85,18 +86,23 @@
 .subtitle--footer {
     
     color: var(--text-white-color);
-     @media screen and (min-width: 480px){
+    //  @media screen and (min-width: 480px){
      
 
-      }
+    //   }
 }
 
 .footer-sotial-list{
     
      @media screen and (min-width: 480px){
-
+        text-align: center;
         margin-top: 60px;
-         margin-bottom: 60px;
+        margin-bottom: 60px;
+      }
+        @media screen and (min-width: 768px){
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 60px;
       }
 
        
