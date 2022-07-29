@@ -7,6 +7,8 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 94px 15px;
+    overflow-y: scroll;
     
 }
 
@@ -17,30 +19,39 @@
     pointer-events: none;
 }
 
-.modal {
+.modal{
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 609px;
 
-    width: 528px;
-    max-height: 581px;
-    height: 100%;
+    max-width: 450px;
+    width: 100%;
 
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     @media screen and (min-width: 768px){
+        max-width: 450px;
+        height: 609px;
+     }
+      @media screen and (min-width: 1200px){
+        max-width: 528px;
+         height: 581px;
+     }
 
- &__title {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color: var(--primery-nav-color);
 
-}
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        color: var(--primery-nav-color);
+
+    }
 }
 .is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.1);
@@ -50,7 +61,7 @@
     padding: 40px;
 }
 
-.modal_form-field{
+.modal_form-field :not(:last-child){
  margin-bottom: 10px;
 }
 
