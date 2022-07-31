@@ -41,6 +41,8 @@ $background-color:#FFFFFF;
 
     
 .team__list{
+
+  
       @media screen and (min-width: 768px){
        display: flex;
        flex-wrap: wrap;
@@ -53,7 +55,7 @@ $background-color:#FFFFFF;
       }
 }
 .team__item{
-     
+ 
     @media screen and (min-width: 768px){
      width: calc((100% - 4*15px)/2);
      margin: 15px;
