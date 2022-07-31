@@ -59,6 +59,8 @@ $border-color: #0000001A;
     cursor: pointer;
     color: var(--text-white-color);
 
+     
+
     &__modal {
         display: block;
         margin-left: auto;
@@ -91,10 +93,12 @@ $border-color: #0000001A;
     line-height: 1.87;
     letter-spacing: 0.06em;
 
-     @media screen and (min-width: 480px){
+     @media screen and (max-width: 479px) and (min-width:480px){
         margin-top: 20px;
-        margin-left: 125px;
-        margin-right: 125px;
+        margin-left: auto;
+        margin-right: auto;
+                // margin-left: 125px;
+        // margin-right: 125px;
       }
     @media screen and (min-width: 1200px){
     margin-left: 12px;
