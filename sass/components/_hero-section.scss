@@ -14,29 +14,26 @@
     background-color: var(--hero-bc-color);
     background-image:  $hero-image-gradient, url(../img/hero.jpg);
 
-    @media screen and( min-device-pixel-ratio: 2) {
-     background-image:  $hero-image-gradient, url();
-    }
+    // @media screen and (min-device-pixel-ratio: 2),
+    // (min-resolution:2dppx),
+    // (min-resolution:192dpi) {
+    //  background-image:  $hero-image-gradient, url(../../img/main/header/Img@2x.jpg);
 
+    // }
+  
 
      @media screen and (min-width: 480px) {
         background-color: var(--hero-bc-color);
         margin-left: auto;
         margin-right: auto;
-         padding-top: 118px;
+        padding-top: 118px;
         background-position: center;
         background-size: cover;
-
-        // max-width: 1600px;
-        // background-position: center;
-        // background-size: cover;
-        // padding-bottom: 200px;
-        // padding-top: 200px;
-        // text-align: center;
-        // margin-left: auto;
-        // margin-right: auto;
-        // background-color: var(--hero-bc-color);
-           
+        // @media screen and (min-device-pixel-ratio: 2),
+        //     (min-resolution:2dppx),
+        //     (min-resolution:192dpi) {
+        //     background-image:  $hero-image-gradient, url(../../img/mobile/header/Img@2x.jpg);
+        //     }
     }
     @media screen and (min-width: 768px) {
            max-width: 1600px;
