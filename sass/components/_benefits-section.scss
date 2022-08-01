@@ -1,9 +1,6 @@
 .benefits {
-    padding: 60px 0;
 
-    @media screen and (min-width:1200px) {
-    padding: 94px 0;
-}
+
 
 .benefits__list{
     display: flex;
@@ -28,8 +25,18 @@
 
         color: var(--title-text-color); }
 
+        
+
     &__title--bottom {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+     @media screen and (min-width: 768px){
+              margin-right: auto;
+         }
+     @media screen and (min-width: 1200px){
+              margin-right: auto;
+         }
+        
+        }
 
 
     &__text {
