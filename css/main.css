@@ -1287,6 +1287,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -1411,8 +1412,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .form-subscription__sign {
-    margin-left: 0px;
-    margin-right: 0px;
+    text-align: start;
   }
 }
 
@@ -1435,7 +1435,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
-    max-width: 380px;
+    width: 350px;
   }
 }
 .footer-form__input::-webkit-input-placeholder {
