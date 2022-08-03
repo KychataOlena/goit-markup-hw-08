@@ -47,33 +47,39 @@
             </li>
          </ul>
       </nav>
-      <button type="button" class="menu-button" 
+ <button type="button" class="header__open-menu" 
          aria-expanded="false"
          aria-controls="menu-container"
-         data-menu-button >
+        data-mobile-menu-open >
          <svg width="40px" height="40px"
           aria-label="переключатель мобильного меню">
-            <use class="icon-close-menu" href="./img/sprite.svg#icon-close_menu" ></use>
+            <!-- <use class="icon-close-menu" href="./img/sprite.svg#icon-close_menu" ></use> -->
             <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
          </svg>
       </button>
-      <div class="menu-container" data-menu id="menu-container">
-         
+    <div class="menu-container is-hidden" data-mobile-menu id="menu-container">
+         <button class="header__close-menu" type="button"data-mobile-menu-close>
+            <svg width=40px height="40">
+             <use class="icon-close-menu" href="./img/sprite.svg#icon-close_menu"></use>     
+            </svg>
+         </button>
+      
        <nav class="menu-container__list">
           <ul class="menu-container__item">
             <li class="menu-container__link"><a href="./index.html" class=" link">Студия</a></li>
             <li class="menu-container__link"><a href="./portfolio.html" class="menu-container--current menu__link link">Портфолио</a></li>
             <li class="menu-container__link"><a href="" class="menu__link link">Контакты</a></li>
          </ul>
-          <ul class="menu-container__address">
+         <div>
+                <ul class="menu-container__address">
             <li class="menu-container__link"> 
-            <a href="mailto:info@devstudio.com" class="link__address link menu-container--mail">
-             +38 096 111 11 11
+            <a href="mailto:info@devstudio.com" class="link__address link menu-container--phone">
+               +38 096 111 11 1
             </a>
          </li>
             <li class="menu-container__link">
-            <a href="telto:+38096111111" class="link__address link  menu-container--phone">
-            info@devstudio.com</a>
+            <a href="telto:+38096111111" class="link__address link  menu-container--mail">
+                info@devstudio.com </a>
             </li>
          </ul>
          <ul class="menu-sotial">
@@ -82,6 +88,8 @@
             <li class="menu-sotial__item"><p class="menu-sotial__text">Facebook</p></li>
             <li class="menu-sotial__item"><p>LinkedIn</p> </li>
          </ul>
+         </div>
+      
        </nav> 
 
       </div>
